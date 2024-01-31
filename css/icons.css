@@ -1,0 +1,32 @@
+i{
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center, 50%, 50%;
+    width: 100%;
+    height: 100%;
+}
+i.activity{
+    background-image: url(../img/svg/Activity.svg);
+}
+i.filter{
+    background-image: url(../img/svg/Filter.svg);
+}
+i.circle{
+    background-image: url(../img/svg/Circle.svg);
+}
+i.graph{
+    background-image: url(../img/svg/Graph.svg);
+}
+i.heart{
+    background-image: url(../img/svg/Heart.svg);
+}
+i.money{
+    background-image: url(../img/svg/Money.svg);
+}
+i.setting{
+    background-image: url(../img/svg/Setting.svg);
+}
+i.user{
+    background-image: url(../img/svg/User.svg);
+}

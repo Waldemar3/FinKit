@@ -1,0 +1,335 @@
+*{ box-sizing: border-box; margin: 0; padding: 0; }
+
+:root{
+    --blue-color: #0962E8;
+}
+
+html{
+    font-size: 16px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter';
+}
+
+header{
+    position: relative;
+    background: #CBECFF;
+    width: calc(100% + 120px);
+    margin: -60px;
+    padding: 60px 60px 0 60px;
+    overflow: hidden;
+}
+
+main{
+    position: relative;
+    top: 180px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
+.wrapper{
+    width: 1024px;
+    padding: 60px;
+}
+
+.invest_key_products{
+    font-size: 1.5rem;
+    width: 350px;
+    text-align: center;
+}
+.invest_key_products span{
+    color: var(--blue-color);
+}
+
+/* Language selection start */
+
+.language_selection{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    align-items: center;
+    width: 75px;
+    justify-content: space-around;
+}
+.language_selection div{
+    cursor: pointer;
+    font-size: 1rem;
+}
+.language_selection div.active{
+    border-radius: 50%;
+    background: #FFF;
+    padding: 5px;
+    color: var(--blue-color);
+}
+
+/* Language selection end */
+
+/* Hand start */
+
+.hand_icon{
+    position: relative;
+    transform: scale(0.6);
+    left: 60px;
+}
+.hand_icon::after, .hand_icon::before{
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: -160px;
+    border: 5px solid rgba(226, 243, 255, .9);
+    border-radius: 50%;
+    width: 540px;
+    height: 540px;
+}
+.hand_icon::before{
+    top: -20px;
+    left: -135px;
+    border: 70px solid rgba(226, 243, 255, .7);
+    width: 440px;
+    height: 440px;
+}
+.hand_icon img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Hand end */
+
+/* Header top start */
+
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+.header_section{
+    position: relative;
+    flex: 1 0 50%;
+    min-width: 320px;
+    max-width: 100%;
+}
+.header_section:nth-child(1){
+    display: flex;
+    justify-content: center;
+}
+.header_section:nth-child(2){
+    height: 380px;
+}
+.header_info{
+    width: 320px;
+}
+.header_info div{
+    margin-bottom: 25px;
+}
+
+.platform_name{
+    font-size: 2.5rem;
+    color: #29374E;
+    font-weight:bold;
+}
+.platform_name span{
+    color: var(--blue-color);
+    background: #fff;
+    border-radius: 10px;
+    padding: 3px 10px 3px 10px;
+    margin-left: 5px;
+}
+.platform_description{
+    width: 260px;
+    font-size: 1rem;
+}
+
+/* Header top end */
+
+/* Features start */
+
+.features{
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 110px 0 110px;
+    margin-top: 20px;
+    gap: 15px;
+}
+.feature{
+    position: relative;
+    display: flex;
+    min-width: 140px;
+    height: 90px;
+    background: #FFF;
+    padding: 20px;
+    flex: 0 1 25%;
+    justify-content: flex-end;
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+.feature span{
+    position: absolute;
+    left: 15px;
+    display: block;
+    font-size: .8rem;
+    width: 120px;
+}
+.feature .icon{
+    background: #EFF9FF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+/* Features start */
+
+/* Cards Container start */
+
+.cards_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 50px 0 50px;
+    margin-top: 40px;
+    gap: 10px;
+}
+.card{
+    display: flex;
+    flex: 1 0 calc(50% - 10px);
+    height: 270px;
+    background: #E9F6FF;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+.card_description{
+    margin: 20px 0 0 20px;
+}
+.card_description span{
+    display: block;
+    margin-top: 15px;
+    font-size: 0.8rem;
+}
+.card span:nth-child(1){
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.card img{
+    margin-bottom: -7px;
+}
+
+/* Cards Container end */
+
+/* Guarantees_Container start */
+
+.guarantees_container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px 0 50px;
+    margin-top: 80px;
+}
+.guarantees_container div{
+    flex: 1 0 calc(50% - 10px);
+}
+.guarantees_description{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+.guarantees_description .top{
+    font-size: 1.9rem;
+    color: var(--blue-color);
+}
+.guarantees_description .top span{
+    color: #000;
+}
+.f_guarantees{
+    position: static;
+    bottom: unset;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.f_guarantees .feature span{
+    width: calc(100% - 30px);
+}
+.f_guarantees .feature .icon{
+    position: absolute;
+    top: -10px;
+    left: 15px;
+}
+
+/* Guarantees_Container end */
+
+/* Buttons start */
+
+.blue_button{
+    cursor: pointer;
+    background: var(--blue-color);
+    border: none;
+    padding: 10px 20px 10px 20px;
+    color: #fff;
+    font-size: .9rem;
+    text-align: center;
+    border-radius: 5px;
+    width: 180px;
+}
+
+/* Buttons end */
+
+@media(max-width: 1024px){
+    .wrapper{
+        width: 100%;
+    }
+    .feature .icon{
+        position: absolute;
+        top: -10px;
+        left: 15px;
+    }
+}
+@media(max-width: 778px){
+    header{
+        width: calc(100% + 20px);
+        margin: -10px;
+        padding: 50px 10px 20px 10px;
+    }
+    main{
+        top: 40px;
+    }
+    .wrapper{
+        padding: 10px;
+    }
+    .hand_icon{
+        left: 70px;
+        transform: scale(0.7);
+    }
+    .header_info, .platform_description, .blue_button{
+        width: 100%;
+    }
+    .features{
+        position: sticky;
+        flex-wrap: wrap;
+    }
+    .cards_container, .features, .guarantees_container{
+        padding: 0 10px 0 10px;
+    }
+    .guarantees_container div{
+        flex: unset;
+    }
+    .f_guarantees{
+        margin-top: 40px;
+    }
+}
+@media(max-width: 375px){
+    .card img{
+        width: 170px;
+        height: 220px;
+        margin-top: 55px;
+    }
+}
